@@ -68,7 +68,8 @@ def reset_game():
     global correct_answers, incorrect_answers, total_questions
     # Input validation loop
     while True:
-        restart = input("Do you want to play again? (yes/no): ").strip().lower()
+        prompt = "Do you want to play again? (yes/no): "
+        restart = input(prompt).strip().lower()
         if restart in ['yes', 'no']:
             break
         else:
@@ -98,7 +99,9 @@ def run_game():
     # Choose Quiz Topic
     chosen_topic = topic_choice()
 
-    selected_questions = get_random_questions_with_shuffled_options(questionSets[chosen_topic])
+    selected_questions = get_random_questions_with_shuffled_options(
+        questionSets[chosen_topic]
+    )
     for i, q in enumerate(selected_questions, 1):
         print(f"\nQuestion {i}: {q['question']}")
 
@@ -115,7 +118,8 @@ def run_game():
                 else:
                     print("❗ Please enter a number between 1 and 4.\n")
             except ValueError:
-                print("❗ Invalid input. Please enter a number between 1 and 4.\n")
+                print("❗ Invalid input. Please enter a number "
+                      "between 1 and 4.\n")
 
         selected_option = q["options"][user_choice - 1]
 
@@ -126,14 +130,17 @@ def run_game():
             print("✅ Correct!\n")
         else:
             incorrect_answers += 1
-            print(f"❌ Incorrect! The correct answer was: {q['answer']}\n")
+            print(f"❌ Incorrect! The correct answer was: "
+                  f"{q['answer']}\n")
 
     # Summary of results
     print("\n🎉 Quiz complete!\n")
-    print(f"Score: {correct_answers} correct, {incorrect_answers} incorrect, out of {total_questions} total.\n")
+    print(f"Score: {correct_answers} correct, {incorrect_answers} incorrect, "
+          f"out of {total_questions} total.\n")
 
     # Reset game state for next playthrough
-    print("Thank you for playing! You can restart the game to try another topic or exit.")
+    print("Thank you for playing! You can restart the game to try another "
+          "topic or exit.")
     reset_game()
 
 
