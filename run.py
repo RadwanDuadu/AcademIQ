@@ -112,8 +112,15 @@ def run_game():
 
     # Reset game state for next playthrough
     print(f"Thank you for playing! You can restart the game to try another topic or exit.")
-    print("If you wish to restart, simply input yes.")
-    restart = input("Do you want to play again? (yes/no): ").strip().lower()
+    
+    # Input validation loop
+    while True:
+        restart = input("Do you want to play again? (yes/no): ").strip().lower()
+        if restart in ['yes', 'no']:
+            break
+        else:
+            print("❗ Invalid input. Please type 'yes' or 'no'.")
+
     if restart == 'yes':
         correct_answers = 0
         incorrect_answers = 0
