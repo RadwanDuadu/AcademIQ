@@ -61,6 +61,29 @@ def topic_choice():
             print("Invalid choice. Please try again.\n")
 
 
+def reset_game():
+    '''
+    Resets the game state counters to zero.
+    This is called at the end of each game to prepare for a new round.
+    '''
+    global correct_answers, incorrect_answers, total_questions
+    # Input validation loop
+    while True:
+        restart = input("Do you want to play again? (yes/no): ").strip().lower()
+        if restart in ['yes', 'no']:
+            break
+        else:
+            print("❗ Invalid input. Please type 'yes' or 'no'.")
+
+    if restart == 'yes':
+        correct_answers = 0
+        incorrect_answers = 0
+        total_questions = 0
+        run_game()
+    else:
+        print("Goodbye! Thanks for playing!\n")
+
+
 def run_game():
     '''
     Main function to run the quiz game.
@@ -97,7 +120,7 @@ def run_game():
 
         selected_option = q["options"][user_choice - 1]
 
-        #Increment game state counters
+        # Increment game state counters
         total_questions += 1
         if selected_option.lower() == q["answer"].lower():
             correct_answers += 1
@@ -105,29 +128,15 @@ def run_game():
         else:
             incorrect_answers += 1
             print(f"❌ Incorrect! The correct answer was: {q['answer']}\n")
-    
+
     # Summary of results
     print("\n🎉 Quiz complete!\n")
     print(f"Score: {correct_answers} correct, {incorrect_answers} incorrect, out of {total_questions} total.\n")
 
     # Reset game state for next playthrough
-    print(f"Thank you for playing! You can restart the game to try another topic or exit.")
-    
-    # Input validation loop
-    while True:
-        restart = input("Do you want to play again? (yes/no): ").strip().lower()
-        if restart in ['yes', 'no']:
-            break
-        else:
-            print("❗ Invalid input. Please type 'yes' or 'no'.")
+    print("Thank you for playing! You can restart the game to try another topic or exit.")
+    reset_game()
 
-    if restart == 'yes':
-        correct_answers = 0
-        incorrect_answers = 0
-        total_questions = 0
-        run_game()
-    else:   
-        print("Goodbye! Thanks for playing!\n")
 
 if __name__ == "__main__":
     run_game()
