@@ -7,7 +7,6 @@ from questions import (
     physicsQuestions,
 )
 
-
 # --- Question sets ---
 questionSets = {
     "geography": geographyQuestions,
