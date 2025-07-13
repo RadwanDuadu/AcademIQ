@@ -31,7 +31,11 @@ geographyQuestions = [
   },
   {
     "question": "What is the capital city of Brazil?",
-    "options": ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador"],
+    "options": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Brasília",
+        "Salvador"],
     "answer": "Brasília"
   },
   {
@@ -40,7 +44,8 @@ geographyQuestions = [
     "answer": "Pacific"
   },
   {
-    "question": "The Great Barrier Reef is located off the coast of which country?",
+    "question":
+    "The Great Barrier Reef is located off the coast of which country?",
     "options": ["USA", "Australia", "Mexico", "South Africa"],
     "answer": "Australia"
   },
@@ -104,7 +109,11 @@ geographyQuestions = [
 historyQuestions = [
   {
     "question": "Who was the first President of the United States?",
-    "options": ["Thomas Jefferson", "John Adams", "George Washington", "James Madison"],
+    "options": [
+        "Thomas Jefferson",
+        "John Adams",
+        "George Washington",
+        "James Madison"],
     "answer": "George Washington"
   },
   {
@@ -119,37 +128,65 @@ historyQuestions = [
   },
   {
     "question": "Who discovered America in 1492?",
-    "options": ["Vasco da Gama", "Christopher Columbus", "Ferdinand Magellan", "Amerigo Vespucci"],
+    "options": [
+        "Vasco da Gama",
+        "Christopher Columbus",
+        "Ferdinand Magellan",
+        "Amerigo Vespucci"],
     "answer": "Christopher Columbus"
   },
   {
     "question": "Which empire was ruled by Julius Caesar?",
-    "options": ["Byzantine Empire", "Ottoman Empire", "Roman Empire", "Persian Empire"],
+    "options": [
+        "Byzantine Empire",
+        "Ottoman Empire",
+        "Roman Empire",
+        "Persian Empire"],
     "answer": "Roman Empire"
   },
   {
     "question": "What wall divided East and West Berlin during the Cold War?",
-    "options": ["Iron Wall", "Berlin Wall", "Great Wall", "Partition Wall"],
+    "options": [
+        "Iron Wall",
+        "Berlin Wall",
+        "Great Wall",
+        "Partition Wall"],
     "answer": "Berlin Wall"
   },
   {
     "question": "Who was the British Prime Minister during World War II?",
-    "options": ["Winston Churchill", "Margaret Thatcher", "Neville Chamberlain", "Tony Blair"],
+    "options": [
+        "Winston Churchill",
+        "Margaret Thatcher",
+        "Neville Chamberlain",
+        "Tony Blair"],
     "answer": "Winston Churchill"
   },
   {
-    "question": "What was the name of the ship on which the Pilgrims traveled to America?",
+    "question":
+    "What was the name of the ship on which the Pilgrims traveled to America?",
     "options": ["Mayflower", "Santa Maria", "Endeavour", "Beagle"],
     "answer": "Mayflower"
   },
   {
-    "question": "Which war was fought between the North and South regions in the United States?",
-    "options": ["Revolutionary War", "Civil War", "World War I", "War of 1812"],
+    "question":
+    ("Which war was fought between the North and South regions "
+     "in the United States?"),
+    "options": [
+        "Revolutionary War",
+        "Civil War",
+        "World War I",
+        "War of 1812"],
     "answer": "Civil War"
   },
   {
-    "question": "Who was the first female Prime Minister of the United Kingdom?",
-    "options": ["Theresa May", "Elizabeth II", "Margaret Thatcher", "Angela Merkel"],
+    "question":
+    "Who was the first female Prime Minister of the United Kingdom?",
+    "options": [
+        "Theresa May",
+        "Elizabeth II",
+        "Margaret Thatcher",
+        "Angela Merkel"],
     "answer": "Margaret Thatcher"
   },
   {
@@ -159,17 +196,29 @@ historyQuestions = [
   },
   {
     "question": "Which famous battle took place in 1066?",
-    "options": ["Battle of Hastings", "Battle of Waterloo", "Battle of Agincourt", "Battle of Trafalgar"],
+    "options": [
+        "Battle of Hastings",
+        "Battle of Waterloo",
+        "Battle of Agincourt",
+        "Battle of Trafalgar"],
     "answer": "Battle of Hastings"
   },
   {
     "question": "Who was known as the Maid of Orléans?",
-    "options": ["Marie Antoinette", "Joan of Arc", "Catherine de' Medici", "Eleanor of Aquitaine"],
+    "options": [
+        "Marie Antoinette",
+        "Joan of Arc",
+        "Catherine de' Medici",
+        "Eleanor of Aquitaine"],
     "answer": "Joan of Arc"
   },
   {
     "question": "Which U.S. president abolished slavery?",
-    "options": ["George Washington", "Andrew Jackson", "Abraham Lincoln", "Theodore Roosevelt"],
+    "options": [
+        "George Washington",
+        "Andrew Jackson",
+        "Abraham Lincoln",
+        "Theodore Roosevelt"],
     "answer": "Abraham Lincoln"
   },
   {
@@ -178,8 +227,13 @@ historyQuestions = [
     "answer": "Italy"
   },
   {
-    "question": "Who was the longest-reigning British monarch before Queen Elizabeth II?",
-    "options": ["King George III", "Queen Victoria", "King Henry VIII", "Queen Mary"],
+    "question":
+    "Who was the longest-reigning British monarch before Queen Elizabeth II?",
+    "options": [
+        "King George III",
+        "Queen Victoria",
+        "King Henry VIII",
+        "Queen Mary"],
     "answer": "Queen Victoria"
   },
   {
@@ -193,13 +247,23 @@ historyQuestions = [
     "answer": "Pompeii"
   },
   {
-    "question": "What was the name of the U.S. policy to prevent the spread of communism during the Cold War?",
-    "options": ["Isolationism", "Containment", "Domino Theory", "Marshall Plan"],
+    "question":
+    ("What was the name of the U.S. policy to prevent"
+     " the spread of communism during the Cold War?"),
+    "options": [
+        "Isolationism",
+        "Containment",
+        "Domino Theory",
+        "Marshall Plan"],
     "answer": "Containment"
   },
   {
     "question": "Who was the leader of the Soviet Union during World War II?",
-    "options": ["Nikita Khrushchev", "Vladimir Lenin", "Joseph Stalin", "Leon Trotsky"],
+    "options": [
+        "Nikita Khrushchev",
+        "Vladimir Lenin",
+        "Joseph Stalin",
+        "Leon Trotsky"],
     "answer": "Joseph Stalin"
   }
 ]
@@ -212,12 +276,20 @@ physicsQuestions = [
   },
   {
     "question": "Who developed the laws of motion?",
-    "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Nikola Tesla"],
+    "options": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Galileo Galilei",
+        "Nikola Tesla"],
     "answer": "Isaac Newton"
   },
   {
     "question": "What does E=mc² represent?",
-    "options": ["Potential energy", "Kinetic energy", "Mass-energy equivalence", "Work-energy theorem"],
+    "options": [
+        "Potential energy",
+        "Kinetic energy",
+        "Mass-energy equivalence",
+        "Work-energy theorem"],
     "answer": "Mass-energy equivalence"
   },
   {
@@ -232,12 +304,18 @@ physicsQuestions = [
   },
   {
     "question": "What does a volt measure?",
-    "options": ["Electric resistance", "Electric potential difference", "Current", "Power"],
+    "options": [
+        "Electric resistance",
+        "Electric potential difference",
+        "Current", "Power"],
     "answer": "Electric potential difference"
   },
   {
     "question": "Which law explains why we need seatbelts?",
-    "options": ["Newton’s First Law", "Hooke’s Law", "Ohm’s Law", "Boyle’s Law"],
+    "options": [
+        "Newton’s First Law",
+        "Hooke’s Law",
+        "Ohm’s Law", "Boyle’s Law"],
     "answer": "Newton’s First Law"
   },
   {
@@ -247,7 +325,11 @@ physicsQuestions = [
   },
   {
     "question": "What does a convex lens do to light rays?",
-    "options": ["Scatters them", "Converges them", "Bends them backward", "Stops them"],
+    "options": [
+        "Scatters them",
+        "Converges them",
+        "Bends them backward",
+        "Stops them"],
     "answer": "Converges them"
   },
   {
@@ -292,11 +374,16 @@ physicsQuestions = [
   },
   {
     "question": "Which principle explains why airplanes fly?",
-    "options": ["Bernoulli’s Principle", "Pascal’s Principle", "Archimedes' Principle", "Heisenberg Uncertainty"],
+    "options": [
+        "Bernoulli’s Principle",
+        "Pascal’s Principle",
+        "Archimedes' Principle",
+        "Heisenberg Uncertainty"],
     "answer": "Bernoulli’s Principle"
   },
   {
-    "question": "Which subatomic particle is responsible for electric current?",
+    "question":
+    "Which subatomic particle is responsible for electric current?",
     "options": ["Proton", "Electron", "Neutron", "Quark"],
     "answer": "Electron"
   },
@@ -360,7 +447,8 @@ biologyQuestions = [
     "answer": "46"
   },
   {
-    "question": "What is the process by which cells divide to form two identical cells?",
+    "question":
+    "What is the process by which cells divide to form two identical cells?",
     "options": ["Meiosis", "Mitosis", "Fusion", "Transcription"],
     "answer": "Mitosis"
   },
@@ -386,7 +474,10 @@ biologyQuestions = [
   },
   {
     "question": "Which system in the body controls hormones?",
-    "options": ["Nervous system", "Digestive system", "Endocrine system", "Respiratory system"],
+    "options": [
+        "Nervous system",
+        "Digestive system",
+        "Endocrine system", "Respiratory system"],
     "answer": "Endocrine system"
   },
   {
@@ -395,18 +486,21 @@ biologyQuestions = [
     "answer": "Arteries"
   },
   {
-    "question": "Which biomolecule is primarily responsible for building muscle?",
+    "question":
+    "Which biomolecule is primarily responsible for building muscle?",
     "options": ["Lipids", "Proteins", "Carbohydrates", "Vitamins"],
     "answer": "Proteins"
   },
   {
     "question": "What is the main function of red blood cells?",
-    "options": ["Fighting infections", "Clotting blood",
-                "Transporting oxygen","Digesting food"],
+    "options": [
+        "Fighting infections", "Clotting blood",
+        "Transporting oxygen", "Digesting food"],
     "answer": "Transporting oxygen"
   },
   {
-    "question": "Which part of the plant absorbs water and nutrients from the soil?",
+    "question":
+    "Which part of the plant absorbs water and nutrients from the soil?",
     "options": ["Stem", "Leaf", "Root", "Flower"],
     "answer": "Root"
   }
@@ -435,7 +529,7 @@ chemistryQuestions = [
   },
   {
     "question": "What type of bond is formed by sharing electrons?",
-    "options": ["Ionic bond", "Covalent bond", 
+    "options": ["Ionic bond", "Covalent bond",
                 "Hydrogen bond", "Metallic bond"],
     "answer": "Covalent bond"
   },
@@ -472,8 +566,11 @@ chemistryQuestions = [
   },
   {
     "question": "Which acid is found in the stomach?",
-    "options": ["Hydrochloric acid", "Sulfuric acid",
-        "Nitric acid", "Acetic acid"],
+    "options": [
+        "Hydrochloric acid",
+        "Sulfuric acid",
+        "Nitric acid",
+        "Acetic acid"],
     "answer": "Hydrochloric acid"
   },
   {
@@ -482,7 +579,8 @@ chemistryQuestions = [
     "answer": "Endothermic"
   },
   {
-    "question": "What do we call a substance that speeds up a chemical reaction?",
+    "question":
+    "What do we call a substance that speeds up a chemical reaction?",
     "options": ["Solvent", "Reactant", "Catalyst", "Base"],
     "answer": "Catalyst"
   },
@@ -503,7 +601,11 @@ chemistryQuestions = [
   },
   {
     "question": "What happens in an oxidation reaction?",
-    "options": ["Gain of electrons", "Loss of electrons", "Formation of a base", "Loss of neutrons"],
+    "options": [
+        "Gain of electrons",
+        "Loss of electrons",
+        "Formation of a base",
+        "Loss of neutrons"],
     "answer": "Loss of electrons"
   },
   {
@@ -512,7 +614,8 @@ chemistryQuestions = [
     "answer": "Mendeleev"
   },
   {
-    "question": "What is the process of turning a solid directly into a gas called?",
+    "question":
+    "What is the process of turning a solid directly into a gas called?",
     "options": ["Condensation", "Evaporation", "Sublimation", "Melting"],
     "answer": "Sublimation"
   }
