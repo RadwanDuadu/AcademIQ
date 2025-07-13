@@ -24,6 +24,10 @@ total_questions = 0
 
 
 def get_random_questions_with_shuffled_options(questions, count=10):
+    '''
+    Randomly selects a specified number of questions from the provided list.
+    Each question's options are shuffled before returning.
+    '''
     selected = random.sample(questions, min(count, len(questions)))
     for q in selected:
         random.shuffle(q["options"])
@@ -58,30 +62,65 @@ def topic_choice():
 
 
 def run_game():
+    '''
+    Main function to run the quiz game.
+    1. Prompts the user to choose a topic.
+    2. Randomly selects questions from the chosen topic.
+    3. Displays each question with shuffled options.
+    4. Collects user input and checks answers.
+    5. Displays the score at the end.
+    6. Asks if the user wants to play again.
+    '''
     global correct_answers, incorrect_answers, total_questions
 
+    # Choose Quiz Topic
     chosen_topic = topic_choice()
 
     selected_questions = get_random_questions_with_shuffled_options(questionSets[chosen_topic])
-
     for i, q in enumerate(selected_questions, 1):
         print(f"\nQuestion {i}: {q['question']}")
-        for opt in q["options"]:
-            print(opt)
 
-        user_input = input("Your answer (just the text, e.g., 'Paris'): ").strip()
+        # Display options with numbers
+        for idx, opt in enumerate(q["options"], 1):
+            print(f"{idx}. {opt}")
 
+        # Input loop to ensure valid selection
+        while True:
+            try:
+                user_choice = int(input("Your answer (1-4): \n").strip())
+                if 1 <= user_choice <= len(q["options"]):
+                    break
+                else:
+                    print("❗ Please enter a number between 1 and 4.\n")
+            except ValueError:
+                print("❗ Invalid input. Please enter a number between 1 and 4.\n")
+
+        selected_option = q["options"][user_choice - 1]
+
+        #Increment game state counters
         total_questions += 1
-        if user_input.lower() == q["answer"].lower():
+        if selected_option.lower() == q["answer"].lower():
             correct_answers += 1
-            print("✅ Correct!")
+            print("✅ Correct!\n")
         else:
             incorrect_answers += 1
-            print(f"❌ Incorrect! The correct answer was: {q['answer']}")
+            print(f"❌ Incorrect! The correct answer was: {q['answer']}\n")
+    
+    # Summary of results
+    print("\n🎉 Quiz complete!\n")
+    print(f"Score: {correct_answers} correct, {incorrect_answers} incorrect, out of {total_questions} total.\n")
 
-    print("\n🎉 Quiz complete!")
-    print(f"Score: {correct_answers} correct, {incorrect_answers} incorrect, out of {total_questions} total.")
-
+    # Reset game state for next playthrough
+    print(f"Thank you for playing! You can restart the game to try another topic or exit.")
+    print("If you wish to restart, simply input yes.")
+    restart = input("Do you want to play again? (yes/no): ").strip().lower()
+    if restart == 'yes':
+        correct_answers = 0
+        incorrect_answers = 0
+        total_questions = 0
+        run_game()
+    else:   
+        print("Goodbye! Thanks for playing!\n")
 
 if __name__ == "__main__":
     run_game()
