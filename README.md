@@ -41,24 +41,24 @@ source: [AcademIQ amiresponsive](https://ui.dev/amiresponsive?url=https://academ
 **[Features](#features)** (see below)
 
 **Content Requirements**
-- Input form for daily sandwich sales.
-- Display of total daily sales and breakdown by sandwich type.
-- Trend analysis over specified time periods (e.g., week, month).
-- Category filters for sandwich types (e.g., vegetarian, meat, cheese).
-- Suggested production numbers for the next day based on sales data.
+- Input system for selecting a quiz topic from multiple academic categories.
+- Randomized display of multiple-choice questions with numbered answer options.
+- Score tracking for correct and incorrect answers during a single quiz session.
+- End-of-quiz summary displaying total questions attempted, number correct, and incorrect.
+- Option to restart the quiz and choose a new topic for repeated learning.
 
 #### 3. Structure
 
 **Information Architecture**
 - **Hierarchy**:
-  - Daily sales input form as the primary focus for ease of use.
+  - Topic selection and quiz initiation as the primary focus for ease of access.
 
 **User Flow**
-1. User opens the app → inputs daily sandwich sales data.
-2. User views a summary of the day’s sales → checks breakdown by type.
-3. User views Trends → analyzes sales trends over time.
-4. User receives suggested production numbers for the next day.
-5. User logs data quickly and returns to shop activities.
+1. User opens the app → selects a quiz topic from the available list.
+2. User answers a series of randomized multiple-choice questions.
+3. User receives immediate feedback after each question (correct/incorrect).
+4. User completes the quiz → views a summary of their score and performance.
+5. User chooses to replay with a new topic or exit the application.
 
 #### 4. Skeleton
 
