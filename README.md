@@ -6,32 +6,9 @@ Developer: Radwan Duadu ([RadwanDuadu](https://www.github.com/RadwanDuadu))
 [![GitHub last commit](https://img.shields.io/github/last-commit/RadwanDuadu/AcademIQ)](https://www.github.com/RadwanDuadu/AcademIQ/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/RadwanDuadu/AcademIQ)](https://www.github.com/RadwanDuadu/AcademIQ)
 
-⚠️ PROJECT INTRODUCTION⚠️
+AcademIQ is a terminal-based quiz application built with Python, designed to make learning interactive and engaging. It covers five key academic subjects — Geography, History, Biology, Chemistry, and Physics — offering users a selection of randomized multiple-choice questions. The game provides immediate feedback on answers, tracks performance, and allows users to replay with different topics, making it ideal for revision, exam prep, or general knowledge testing.
 
-In this section, include a few paragraphs providing an overview of your project. Essentially, this part is your "sales pitch". Describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-⚠️ --- END --- ⚠️
-
-🛑 README NOTES 🛑
-
-Do not add a **Table of Contents** to your Markdown files. GitHub has these built-in automatically using the headers/hashtags.
-
-Don't add screenshots for the README/TESTING into your `assets` or `static` folders. Create a new folder at the root-level called `documentation`. Consider creating sub-directories within `documentation` to handle things like `wireframes`, `features`, `validation`, `responsiveness`, etc.
-
-Learn about Markdown Alerts (aka Callouts), a fairly new feature for GitHub Markdown files.
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts
-Note: these are not visible within your README Previewer, and are only visible once you push the code to GitHub.
-
-**Site Mockups**
-*([amiresponsive](https://ui.dev/amiresponsive?url=https://academ-iq-b9bb24eb3c99.herokuapp.com), [techsini](https://techsini.com/multi-mockup), etc.)*
-Having issues generating site mockups? This is likely due to security policies with your deployed site.
-If you open up your DevTools, there may be an error referencing `X-Frame-Options`.
-
-For Chrome users, head over to http://bit.ly/3iRPn4u and install the extension within your browser. Once installed, navigate back to the mockup site of your choice. You should find your site rendering in the various devices now.
-
-Alternatively, open your project in Gitpod and run the server. Once the site is running, click the `Ports` tab from your Gitpod Terminal. Click the padlock on the appropriate port for your project (`Flask: 5000`, `Django: 8000`). This will make your local page public temporarily. Now, copy the URL of your live-preview page into the responsive tool above. You should find your site rendering in the various devices.
-
-🛑 --- END ---- 🛑
+Targeted at students, educators, and lifelong learners, AcademIQ delivers a lightweight and accessible learning tool that works directly from the command line. With robust input validation, a replayable structure, and a focus on ease-of-use, the application is perfect for anyone seeking to improve subject knowledge in a fun and self-paced way.
 
 ![screenshot](documentation/mockup.png)
 
