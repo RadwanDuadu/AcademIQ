@@ -21,22 +21,20 @@ source: [AcademIQ amiresponsive](https://ui.dev/amiresponsive?url=https://academ
 
 ### The 5 Planes of UX
 
-⚠️ NOTE: make sure to update the text below to match your own project! ⚠️
-
 #### 1. Strategy
 
 **Purpose**
-- Provide users with a simple and effective way to track daily sandwich sales and analyze trends over time.
-- Help users optimize sandwich production to reduce waste and meet demand efficiently.
+- Provide users with a simple and interactive way to test their knowledge across multiple academic subjects.
+- Help users identify strengths and areas for improvement through engaging quiz sessions.
 
 **Primary User Needs**
-- Track daily sales by sandwich type with minimal effort.
-- Analyze sales data for trends and insights.
-- Receive suggestions for future sandwich production.
+- Select a topic and complete a short, randomized quiz with immediate feedback.
+- View a summary of correct and incorrect answers at the end of each session.
+- Replay quizzes on different topics to reinforce learning.
 
 **Business Goals**
-- Offer a reliable tool for tracking sales and optimizing inventory.
-- Help businesses reduce waste and improve customer satisfaction through better forecasting.
+- Offer a reliable, user-friendly educational tool that promotes self-assessment and continuous learning.
+- Support students, educators, and independent learners in strengthening their academic knowledge efficiently.
 
 #### 2. Scope
 
