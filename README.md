@@ -79,22 +79,20 @@ I've used [Lucidchart](https://www.lucidchart.com/pages/examples/flowchart-maker
 
 ## User Stories
 
-⚠️ INSTRUCTIONS ⚠️
+| **Target** | **Expectation**                                                                 | **Outcome**                                                                   |
+| ---------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| As a user  | I would like to answer multiple-choice questions using a number between 1 and 4 | so that I can easily select an option without typing the full answer.         |
+| As a user  | I want the quiz to validate my input                                            | so that I don't accidentally crash the program by entering something invalid. |
+| As a user  | I want the quiz to ignore capitalization when checking my answers               | so that I’m not penalized for formatting.                                     |
+| As a user  | I want immediate feedback after each question                                   | so that I know right away whether I was correct or not.                       |
+| As a user  | I want to see my total score at the end of the quiz                             | so that I can track how well I performed.                                     |
+| As a user  | I want the option to restart the quiz without closing the program               | so that I can try different topics easily.                                    |
+| As a user  | I want the quiz to only accept “yes” or “no” when asking to restart             | so that I’m not confused by vague input handling.                             |
+| As a user  | I want to choose from multiple quiz topics                                      | so that I can focus on the subject areas that interest me most.               |
+| As a user  | I want questions to be randomly selected from the topic I choose                | so that I get a different experience each time I play.                        |
+| As a developer | I want to deploy the quiz application on Heroku            | so that users can access and play the game online without needing to install anything locally. |
+| As a developer | I want to validate the Python code using tools like CI Python Linter | so that I can ensure code quality, readability, and consistency with PEP 8 standards.          |
 
-In this section, list all of your possible user stories for the project. Samples have been provided below using the example walkthrough project for your inspiration. Make sure to adjust to match your own project features!
-
-⚠️ --- END --- ⚠️
-
-| Target | Expectation | Outcome |
-| --- | --- | --- |
-| As a user | I would like to input the number of each sandwich type sold during the day | so that I can track daily sales accurately. |
-| As a user | I would like to view a breakdown of total sandwich sales by type | so that I can easily see which sandwiches are the most and least popular. |
-| As a user | I would like the application to calculate the total sandwiches sold for the day | so that I don’t have to do manual sums. |
-| As a user | I would like to see a trend of sandwich sales over time (e.g., week, month) | so that I can identify which sandwiches are consistently popular. |
-| As a user | I would like the application to suggest an estimated number of each sandwich type to make for the next day, based on past sales data | so that I can minimize waste and shortages. |
-| As a user | I would like the app to categorize sandwiches by type (e.g., vegetarian, meat, cheese) | so that I can track popularity within different dietary categories. |
-| As a user | I would like to input sales quickly with minimal typing | so that I can focus on running the shop instead of logging data. |
-| As a user | I would like the app to be intuitive and easy to use | so that I can start tracking sales without needing extensive training. |
 
 ## Features
 
