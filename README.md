@@ -110,28 +110,14 @@ I've used [Lucidchart](https://www.lucidchart.com/pages/examples/flowchart-maker
 
 ### Future Features
 
-⚠️ INSTRUCTIONS ⚠️
+| **Feature**                         | **Description**                                                                                                                                                    |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **User-Contributed Questions**      | Allow users to input their own multiple-choice questions, including four options and the correct answer, which are then validated and added to the relevant topic. |
+| **High Score Tracking**             | Track and display the user’s highest score across all sessions, providing motivation to improve and recognize personal achievements.                               |
+| **Timed Quiz Mode**                 | Introduce an optional mode where each question must be answered within a set time limit, increasing challenge and simulating time-pressured conditions.            |
+| **Detailed Quiz Summary**           | Display a complete breakdown of all quiz questions, showing which were answered correctly and incorrectly, along with the correct answers for review.              |
+| **Custom Question Count Selection** | Allow users to choose how many questions they wish to answer before starting the quiz, enabling flexible gameplay sessions of varying lengths.                     |
 
-Do you have additional ideas that you'd like to include on your project in the future? Fantastic, list them here! It's always great to have plans for future improvements. Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-A few examples are listed below to align with possible ways to improve on the sample walkthrough project, to give you some inspiration.
-
-⚠️ --- END ---⚠️
-
-- **User Authentication and Role Management**: Implement a login system with roles (e.g., admin, employee) to restrict data access based on user roles.
-- **Data Visualization**: Add charts and graphs to visually represent sales trends, stock levels, and surplus/waste over time.
-- **Real-time Data Sync**: Integrate real-time syncing of sales and stock data across multiple devices to support live updates.
-- **Automated Restocking Alerts**: Notify users when stock levels fall below a certain threshold, prompting restock orders.
-- **Predictive Analytics**: Use historical sales data to predict future demand, helping to optimize stock levels and minimize waste.
-- **Multilingual Support**: Add support for multiple languages to make the app more accessible to a global audience.
-- **Mobile App Integration**: Develop a mobile version of the app for easier data input and stock management on the go.
-- **Reporting and Exporting**: Generate and export detailed reports in PDF or CSV format for deeper analysis of sales, surplus, and stock data.
-- **Inventory Management**: Include functionality to track supplier information, order inventory, and manage costs directly within the app.
-- **Customer Feedback Integration**: Allow customers to leave feedback on sold items, giving insight into sales performance and customer satisfaction.
-- **Customizable Dashboards**: Provide users with the ability to customize their dashboard, selecting which data points and metrics they want to monitor.
-- **Historical Data Comparison**: Implement functionality to compare current sales and stock data with data from the same period in previous years.
-- **Seasonal Adjustment Recommendations**: Analyze sales patterns and suggest stock adjustments for holidays or other seasonal trends.
-- **API Integration**: Provide an API for integrating with other third-party services, such as point-of-sale systems or accounting software.
 
 ## Tools & Technologies
 
