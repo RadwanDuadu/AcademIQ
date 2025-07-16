@@ -67,8 +67,7 @@ source: [AcademIQ amiresponsive](https://ui.dev/amiresponsive?url=https://academ
 #### 5. Surface
 
 **Visual Design Elements**
-- **[Colours](#colour-scheme)** (see below)
-- **[Typography](#typography)** (see below)
+- No visual design elements as this project is completed using the commandline. 
 
 ## Wireframes
 
@@ -93,27 +92,21 @@ I've used [Lucidchart](https://www.lucidchart.com/pages/examples/flowchart-maker
 | As a developer | I want to deploy the quiz application on Heroku            | so that users can access and play the game online without needing to install anything locally. |
 | As a developer | I want to validate the Python code using tools like CI Python Linter | so that I can ensure code quality, readability, and consistency with PEP 8 standards.          |
 
-
 ## Features
-
-⚠️ INSTRUCTIONS ⚠️
-
-In this section, you should go over the different parts of your project, and describe each feature. You should explain what value each of the features provides for the user, focusing on your target audience, what they want to achieve, and how your project can help them achieve these things.
-
-**IMPORTANT**: Remember to always include a screenshot of each individual feature!
-
-⚠️ --- END --- ⚠️
 
 ### Existing Features
 
-| Feature | Notes | Screenshot |
-| --- | --- | --- |
-| Data Input Validation | The program validates user input by ensuring the data is exactly six comma-separated numbers before continuing. | ![screenshot](documentation/features/data-validation.png) |
-| API Update | Sales, surplus, and stock data are updated in the relevant Google Sheets worksheet using gspread functionality. | ![screenshot](documentation/features/api-update.png) |
-| Surplus Calculation | Calculates surplus by comparing the latest stock and sales data to identify potential waste or shortages. | ![screenshot](documentation/features/surplus-calculation.png) |
-| Last 5 Sales Entries | Retrieves the last five sales entries from the "sales" worksheet for calculating stock averages. | ![screenshot](documentation/features/latest-entries.png) |
-| Stock Calculation | Computes stock based on the last 5 sales entries, adding 10% to the average to ensure adequate future stock. | ![screenshot](documentation/features/stock-calculation.png) |
-| Sales Data Automation | Automates the entire process of retrieving, validating, and updating sales, surplus, and stock data in Google Sheets. | ![screenshot](documentation/features/sales-data.png) |
+| **Feature**                | **Notes**                                                                                                              | **Screenshot**                                               |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Multiple-Choice Questions  | Each question is presented with 4 answer choices, and users respond by entering a number (1–4).                        | ![screenshot](documentation/features/multiple-choice-questions.png)    |
+| Input Validation (Answers) | The quiz validates user input to ensure only numbers between 1 and 4 are accepted to prevent invalid entries.          | ![screenshot](documentation/features/input-validation.png)   |
+| Case-Insensitive Answers   | User answers are checked without considering case, ensuring fairness regardless of capitalization.                     | ![screenshot](documentation/features/case-insensitive.png)   |
+| Answer Feedback            | The quiz provides immediate feedback after each question—indicating correct or incorrect and showing the right answer. | ![screenshot](documentation/features/answer-feedback.png)           |
+| Score Tracking             | Tracks total, correct, and incorrect answers throughout the session, showing a final summary.                          | ![screenshot](documentation/features/score-feedback.png)     |
+| Restart Quiz Option        | At the end of the quiz, users can restart without needing to manually rerun the application.                           | ![screenshot](documentation/features/restart-quiz.png)     |
+| Restart Input Validation   | Only accepts “yes” or “no” inputs when asking users if they want to restart the quiz.                                  | ![screenshot](documentation/features/restart-validation.png) |
+| Topic Selection            | Users can choose from five available topics before the quiz starts (e.g., Geography, History, etc.).                   | ![screenshot](documentation/features/choose-topic.png)    |
+| Random Question Selection  | The quiz randomly selects and shuffles questions from the chosen topic to offer a unique experience each time.         | ![screenshot](documentation/features/random-question-selection.png)   |
 
 ### Future Features
 
