@@ -69,15 +69,28 @@ def input_validation(input, question):
         try:
             user_choice = int(input("Your answer (1-4): \n").strip())
             if 1 <= user_choice <= len(question["options"]):
-                break
+                return user_choice
             else:
                 print("❗ Please enter a number between 1 and 4.\n")
-            return user_choice
         except ValueError:
-            print("❗ Invalid input. Please enter a number "
-                  "between 1 and 4.\n")
+            print("❗ Invalid input. Please enter a number between 1 and 4.\n")
 
-
+def score_tracker(selected_option, question):
+    '''
+    Display feedback of answered question. 
+    Track correct and incorrect answers and total score.
+    '''
+    global correct_answers, incorrect_answers, total_questions
+    # Increment game state counters
+    total_questions += 1
+    if selected_option.lower() == question["answer"].lower():
+        correct_answers += 1
+        print("✅ Correct!\n")
+    else:
+        incorrect_answers += 1
+        print(f"❌ Incorrect! The correct answer was: "
+              f"{question['answer']}\n")
+    
 def reset_game():
     '''
     Resets the game state counters to zero.
@@ -136,14 +149,7 @@ def run_game():
         selected_option = q["options"][user_choice - 1]
 
         # Increment game state counters
-        total_questions += 1
-        if selected_option.lower() == q["answer"].lower():
-            correct_answers += 1
-            print("✅ Correct!\n")
-        else:
-            incorrect_answers += 1
-            print(f"❌ Incorrect! The correct answer was: "
-                  f"{q['answer']}\n")
+        score_tracker(selected_option, q)
 
     # Summary of results
     print("\n🎉 Quiz complete!\n")
