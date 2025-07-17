@@ -75,9 +75,10 @@ def input_validation(input, question):
         except ValueError:
             print("❗ Invalid input. Please enter a number between 1 and 4.\n")
 
+
 def score_tracker(selected_option, question):
     '''
-    Display feedback of answered question. 
+    Display feedback of answered question.
     Track correct and incorrect answers and total score.
     '''
     global correct_answers, incorrect_answers, total_questions
@@ -90,7 +91,8 @@ def score_tracker(selected_option, question):
         incorrect_answers += 1
         print(f"❌ Incorrect! The correct answer was: "
               f"{question['answer']}\n")
-    
+
+
 def reset_game():
     '''
     Resets the game state counters to zero.
