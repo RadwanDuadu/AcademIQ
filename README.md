@@ -195,30 +195,14 @@ The primary functions used on this application are:
 
 #### Imports
 
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to explain your Python imports and packages, with some common examples found below.
-
-⚠️ --- END --- ⚠️
-
 I've used the following Python packages and external imports.
 
-- `gspread`: used with the Google Sheets API
-- `google.oauth2.service_account`: used for the Google Sheets API credentials
-- `time`: used for adding time delays
-- `os`: used for adding a `clear()` function
-- `colorama`: used for including color in the terminal
+- `questions`: used to get the list of subject questions.
 - `random`: used to get a random choice from a list
 
 ## Agile Development Process
 
 ### GitHub Projects
-
-⚠️ TIP ⚠️
-
-Consider adding screenshots of your Projects Board(s), Issues (open and closed), and Milestone tasks.
-
-⚠️ --- END ---⚠️
 
 [GitHub Projects](https://www.github.com/RadwanDuadu/AcademIQ/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
 
