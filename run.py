@@ -60,6 +60,24 @@ def topic_choice():
             print("Invalid choice. Please try again.\n")
 
 
+def input_validation(input, question):
+    '''
+    Validates user input against a list of valid inputs.
+    Repeats the prompt until a valid input is received.
+    '''
+    while True:
+        try:
+            user_choice = int(input("Your answer (1-4): \n").strip())
+            if 1 <= user_choice <= len(question["options"]):
+                break
+            else:
+                print("❗ Please enter a number between 1 and 4.\n")
+            return user_choice
+        except ValueError:
+            print("❗ Invalid input. Please enter a number "
+                  "between 1 and 4.\n")
+
+
 def reset_game():
     '''
     Resets the game state counters to zero.
@@ -99,9 +117,12 @@ def run_game():
     # Choose Quiz Topic
     chosen_topic = topic_choice()
 
+    # randomly select questions and shuffle options
     selected_questions = get_random_questions_with_shuffled_options(
         questionSets[chosen_topic]
     )
+
+    # loop over selected questions
     for i, q in enumerate(selected_questions, 1):
         print(f"\nQuestion {i}: {q['question']}")
 
@@ -110,16 +131,7 @@ def run_game():
             print(f"{idx}. {opt}")
 
         # Input loop to ensure valid selection
-        while True:
-            try:
-                user_choice = int(input("Your answer (1-4): \n").strip())
-                if 1 <= user_choice <= len(q["options"]):
-                    break
-                else:
-                    print("❗ Please enter a number between 1 and 4.\n")
-            except ValueError:
-                print("❗ Invalid input. Please enter a number "
-                      "between 1 and 4.\n")
+        user_choice = input_validation(input, q)
 
         selected_option = q["options"][user_choice - 1]
 

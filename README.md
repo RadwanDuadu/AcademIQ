@@ -142,18 +142,6 @@ To follow best practice, a flowchart was created for the app's logic, and mapped
 
 ![screenshot](documentation/flowchart.png)
 
-⚠️ RECOMMENDED ⚠️
-
-Looking for an interactive version of your flowchart? Consider using a [`Mermaid flowchart`](https://mermaid.live). To simplify the process, you can ask ChatGPT (or similar) the following prompt:
-
-> ChatGPT Prompt:
-> "Generate a Markdown syntax Mermaid flowchart using a screenshot of my existing flowchart"
-> [paste-your-flowchart-screenshot-into-ChatGPT]
-
-The "Love Sandwiches" sample flowchart in Markdown syntax using Mermaid can be seen below as an example.
-
-**NOTE**: A Markdown Preview tool doesn't show the interactive flowchart, you must first commit/push the code to your GitHub repository in order to see it live in action.
-
 ```mermaid
 flowchart TD
     A([Start]) --> B[Import quiz questions and set score values to zero]
@@ -186,27 +174,7 @@ flowchart TD
 
 Source: [Mermaid Flowchart for AcademIQ](https://mermaid.live/edit#pako:eNqtVE1z2jAQ_SsanZoZksHhI-BDOw0kgXwnJJ1pDQfFWrAmtuRKcihh-O_VF4xJe-ihPoAl7Xv73u5aa5wKCjjG81ws04xIjZ6GU47M8_VTMtFmY3aADg8_o9NkXJTCnP-s2Lv5AaWZ4AoRTpECjVQqJKA3kpsTpAV6BylmnunUEQySR3Awc1qyFKWZYCmEkIELGa7HBpsBokQTVErxxihQS8rol42PHJpIdCtc_FlyLxnXRgMCKYVEBShFFmDza5AF4yS375SptFIKLTOiETP_UvAFWjKduUxBw5mXWUvz3Vixe-fJIBNCAaoUyEMFOaTa6HI-AvjcBV4kE3eIomatRHMpCmfLWFbAg39pKieKfBUILhzBaO1qjnIhSiOX5VDjycgbIC6M3zxHL2CYjLEyJyugoTgjRzJOhn5_h_USthnRXx2MHfZyhyVcLUEiUbrkIejSBV3tWmkLYivsGW0j9mABdeVQ1__Q3etad2_-a3dvvPJamm13b5OBKEpipteKc44YLyvtKcxYS2_N-gpktw54Zw350BC1tXFX579PxjyVUADXH9j85zKrYYL1hxqE8T9AkpGXfIu7d4jHXd_mAPSFpK_h-MEf-8WjW0zWIztJdor25nR_pLZeJjVdo9rW1t7TLrO_AsjcNMeRf5hcR-89AA3qnhzF83pvntjcdmJl6q8y2-BUcM145ftjr5-g7LkuY1DbC2q_fUrOOJ0dTDlu4IVkFMdaVtDAhZkeYpd4bVFTbIgLmOLYvFIiX6d4yjcGUxL-Q4hiC5OiWmQ4npNcmVVVmumCISMLSYrdLqm0mKx4usMApyAHouIax512z5HieI1_4bjV6x31m51Ws9U5PmlF7Wa3gVc4bnePTjrN5nHU7kadKGpHmwZ-dzKaR72Tdt88vW7UivpRp9_AQJkW8sbf4u4y3_wG8njeSQ)
 
-⚠️ --- END --- ⚠️
-
 #### Classes & Functions
-
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to explain your Python classes (if applicable) and functions. Examples below for inspiration, although Love Sandwiches doesn't use this example `Person` class/object.
-
-⚠️ --- END --- ⚠️
-
-The program uses classes as a blueprint for the project's object-oriented programming (OOP). This allows for the object to be reusable and callable where necessary.
-
-```python
-class Person:
-    """ Insert docstring comments here """
-    def __init__(self, name, age, health, inventory):
-        self.name = name
-        self.age = age
-        self.health = health
-        self.inventory = inventory
-```
 
 The primary functions used on this application are:
 
