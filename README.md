@@ -132,23 +132,13 @@ I've used [Lucidchart](https://www.lucidchart.com/pages/examples/flowchart-maker
 | [![badge](https://img.shields.io/badge/ChatGPT-grey?logo=openai&logoColor=75A99C)](https://chat.openai.com) | Help debug, troubleshoot, and explain things. |
 | [![badge](https://img.shields.io/badge/Lucidchart-grey?logo=lucid&logoColor=F97B2C)](https://www.lucidchart.com) | Flow diagrams for mapping the app's logic. |
 
-⚠️ NOTE ⚠️
-
-Want to add more?
-
-- Tutorial: https://shields.io/badges/static-badge
-- Icons/Logos: https://simpleicons.org
-  - FYI: not all logos are available to use
-
-🛑 --- END --- 🛑
-
 ## Database Design
 
 ### Data Model
 
 #### Flowchart
 
-To follow best practice, a flowchart was created for the app's logic, and mapped out using a free version of [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning) and/or [Draw.io](https://www.draw.io). The flowchart below represents the main process of this Python program. It shows the entire cycle of the application.
+To follow best practice, a flowchart was created for the app's logic, and mapped out using a free version of [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning). The flowchart below represents the main process of this Python program. It shows the entire cycle of the application.
 
 ![screenshot](documentation/flowchart.png)
 
@@ -166,20 +156,35 @@ The "Love Sandwiches" sample flowchart in Markdown syntax using Mermaid can be s
 
 ```mermaid
 flowchart TD
-    A[Start] --> B[Get Sales Data]
-    B --> C{Is Data Valid?}
-    C -->|Yes| D[Convert Data to Integers]
-    C -->|No| B
-    D --> E[Update Sales Worksheet]
-    E --> F[Calculate Surplus Data]
-    F --> G[Update Surplus Worksheet]
-    G --> H[Get Last 5 Sales Entries]
-    H --> I[Calculate Stock Data]
-    I --> J[Update Stock Worksheet]
-    J --> K[End]
+    A([Start]) --> B[Import quiz questions and set score values to zero]
+    B --> C[Request topic choice]
+    C --> D{Is the data provided valid?}
+    D -- No --> E[Print an error message to terminal to discuss what is wrong with data]
+    E --> C
+    D -- Yes --> F[Choose user-selected topic]
+    F --> G[Select 10 questions from the chosen topic randomly]
+    G --> H{Start loop while questions have not all been displayed}
+    H --> I[Display question from randomly selected topic]
+    I --> J[Display answer options]
+    J --> K[Request user to select an answer option]
+    K --> L{Is the data provided valid?}
+    L -- No --> M[Print an error message to terminal to discuss what is wrong with data]
+    M --> K
+    L -- Yes --> N[Compare the user input with correct answer]
+    N --> O{Is input correct?}
+    O -- Yes --> P[Increment correct answer value]
+    O -- No --> Q[Increment incorrect answer variable]
+    P --> R[Display feedback]
+    Q --> R
+    R --> S{Have all 10 questions been displayed?}
+    S -- No --> H
+    S -- Yes --> T[Display score after all questions have been answered]
+    T --> U{Request user if they wish to continue the quiz}
+    U -- Yes --> C
+    U -- No --> V([End])
 ```
 
-Source: [Mermaid Flowchart for Love Sandwiches](https://mermaid.live/edit#pako:eNpdkctugzAQRX_F8jpZdsOiVXkkIa26SR9qgcUIJoAwNjLjVlXIv5cMJErjlWfu8b0z8kHmpkDpyb0yP3kFlsRrmGoxnsdkR2OdieXyXvjJGknsQGEvQiDIJsZnMTjEU1e8g6qLh-MkBidx-MR-EGESGP2NoztjZESsCUu0fXbNvphB-FMjZOcoeesKIJyTP4xt-gqR5lcRQ6skAJU7xZyznXL_ZlwxtL44zcSt15qxDe_5DD2Juzk00mRrPA-6YSy-jiSTN9eBMSPbSyDrt3Fbhp6SSBeZXMgWbQt1MX7E4aSnkipsMZXeeC3ANqlM9XHkwJHZ_epcemQdLqTjjLCG0kJ7bnagv4y5lNa4spLeHlSPxz-Rd5za)
+Source: [Mermaid Flowchart for AcademIQ](https://mermaid.live/edit#pako:eNqtVE1z2jAQ_SsanZoZksHhI-BDOw0kgXwnJJ1pDQfFWrAmtuRKcihh-O_VF4xJe-ihPoAl7Xv73u5aa5wKCjjG81ws04xIjZ6GU47M8_VTMtFmY3aADg8_o9NkXJTCnP-s2Lv5AaWZ4AoRTpECjVQqJKA3kpsTpAV6BylmnunUEQySR3Awc1qyFKWZYCmEkIELGa7HBpsBokQTVErxxihQS8rol42PHJpIdCtc_FlyLxnXRgMCKYVEBShFFmDza5AF4yS375SptFIKLTOiETP_UvAFWjKduUxBw5mXWUvz3Vixe-fJIBNCAaoUyEMFOaTa6HI-AvjcBV4kE3eIomatRHMpCmfLWFbAg39pKieKfBUILhzBaO1qjnIhSiOX5VDjycgbIC6M3zxHL2CYjLEyJyugoTgjRzJOhn5_h_USthnRXx2MHfZyhyVcLUEiUbrkIejSBV3tWmkLYivsGW0j9mABdeVQ1__Q3etad2_-a3dvvPJamm13b5OBKEpipteKc44YLyvtKcxYS2_N-gpktw54Zw350BC1tXFX579PxjyVUADXH9j85zKrYYL1hxqE8T9AkpGXfIu7d4jHXd_mAPSFpK_h-MEf-8WjW0zWIztJdor25nR_pLZeJjVdo9rW1t7TLrO_AsjcNMeRf5hcR-89AA3qnhzF83pvntjcdmJl6q8y2-BUcM145ftjr5-g7LkuY1DbC2q_fUrOOJ0dTDlu4IVkFMdaVtDAhZkeYpd4bVFTbIgLmOLYvFIiX6d4yjcGUxL-Q4hiC5OiWmQ4npNcmVVVmumCISMLSYrdLqm0mKx4usMApyAHouIax512z5HieI1_4bjV6x31m51Ws9U5PmlF7Wa3gVc4bnePTjrN5nHU7kadKGpHmwZ-dzKaR72Tdt88vW7UivpRp9_AQJkW8sbf4u4y3_wG8njeSQ)
 
 ⚠️ --- END --- ⚠️
 
