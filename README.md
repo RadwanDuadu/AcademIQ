@@ -178,20 +178,20 @@ Source: [Mermaid Flowchart for AcademIQ](https://mermaid.live/edit#pako:eNqtVE1z
 
 The primary functions used on this application are:
 
-- `get_sales_data()`
-    - Get sales figures input from the user.
-- `validate_data()`
-    - Converts all string values into integers.
-- `update_worksheet()`
-    - Update the relevant worksheet with the data provided.
-- `calculate_surplus_data()`
-    - Compare sales with stock and calculate the surplus for each item type.
-- `get_last_5_entries_sales()`
-    - Collects columns of data from sales worksheet.
-- `calculate_stock_data()`
-    -  Calculate the average stock for each item type, adding 10%.
+- `get_random_questions_with_shuffled_options()`
+    - Randomly selects a specified number of questions from the provided list.
+- `topic_choice()`
+    - Selects the subject based on user input and validates input.
+- `reset_game()`
+    - Resets the game state to start of user flow. 
+- `score_tracker()`
+    - Track correct and incorrect answers and total score.
+- `input_validation()`
+    - Validates user input against a list of valid inputs.
+- `run_game()`
+    - Main function to run the quiz game.
 - `main()`
-    - Run all program functions.
+    - Runs the run_game() function
 
 #### Imports
 
