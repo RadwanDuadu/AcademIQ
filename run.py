@@ -60,7 +60,7 @@ def topic_choice():
 
         if not choice.isdigit():
             clear()
-            print("Please enter a valid number.\n")
+            print(f"Your choice {choice}, Please enter a valid number.\n")
             continue
 
         index = int(choice) - 1
@@ -69,31 +69,34 @@ def topic_choice():
             return chosen_topic
         else:
             clear()
-            print("Invalid choice. Please try again.\n")
+            print(f"Your choice {choice},Invalid choice. Please try again.\n")
 
 
-def input_validation(input, question):
+def input_validation(input_func, question):
     '''
     Validates user input against a list of valid inputs.
     Repeats the prompt until a valid input is received.
     '''
     while True:
+        raw_input = input_func("\nYour answer (1-4): \n").strip()
+
         try:
-            user_choice = int(input("\nYour answer (1-4): \n").strip())
+            user_choice = int(raw_input)
             if 1 <= user_choice <= len(question["options"]):
                 return user_choice
             else:
                 clear()
-                print("❗ Please enter a number between 1 and 4.\n")
-                # Display options with numbers
-                for idx, opt in enumerate(question["options"], 1):
-                    print(f"{idx}. {opt}")
+                print(f"Your choice '{user_choice}',"
+                      " ❗ Please enter a number between 1 and 4.\n")
         except ValueError:
             clear()
-            print("❗ Invalid input. Please enter a number between 1 and 4.\n")
-            # Display options with numbers
-            for idx, opt in enumerate(question["options"], 1):
-                print(f"{idx}. {opt}")
+            print(f"Your choice '{raw_input}',"
+                  " ❗ Invalid input. Please enter a number between 1 and 4.\n")
+
+        # Re-display the question and options after error
+        print(f"\n{question['question']}")
+        for idx, opt in enumerate(question["options"], 1):
+            print(f"{idx}. {opt}")
 
 
 def score_tracker(selected_option, question):
