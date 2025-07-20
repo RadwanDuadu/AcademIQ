@@ -196,7 +196,9 @@ The primary functions used on this application are:
 I've used the following Python packages and external imports.
 
 - `questions`: used to get the list of subject questions.
-- `random`: used to get a random choice from a list
+- `random`: used to get a random choice from a list.
+- `time`: used to add time delays between display questions.
+- `colorama`: used to change the colour of commandline text.
 
 ## Agile Development Process
 
@@ -335,6 +337,7 @@ There are no remaining major differences between the local version when compared
 | [Love Sandwiches](https://codeinstitute.net) | Code Institute walkthrough project inspiration |
 | [Real Python](https://realpython.com/python-quiz-application) | Inspiration for a quiz app |
 | [StackOverflow](https://stackoverflow.com/a/50921841) | Clear screen in Python |
+| [Colorama](https://www.youtube.com/watch?v=u51Zjlnui4Y) | Adding color in Python |
 | [ChatGPT](https://chatgpt.com) | Help with code logic and explanations |
 
 ### Media
