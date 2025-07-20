@@ -17,36 +17,6 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 ## Responsiveness
 
-🛑 NOTE 🛑
-
-You are NOT required to showcase "Responsiveness" testing for PP3. The Python terminal was provided to you by Code Institute, and there are known issues with it not being responsive. Responsiveness testing for PP3 is only an added bonus, so if you don't want to include it, feel free to remove this entire **Responsiveness** section.
-
-If you are performing responsiveness tests, here are some known issues that you can document for PP3 specifically:
-
-- `overflow-x` on mobile devices
-- iPhone/Apple devices do not allow users to type anything into the terminal
-- Android devices do work on mobile, but it sometimes decides to stop randomly
-
-🛑 --- END --- 🛑
-
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is to test the following 3 sizes:
-
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of your results, to "prove" that you've actually tested them.
-
-Using the [amiresponsive](http://ami.responsivedesign.is) mockup images (*or similar*) does not meet the requirements. Consider using some of the built-in device sizes from the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well. It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-⚠️ --- END --- ⚠️
-
 I've tested my deployed project to check for responsiveness issues.
 
 | Mobile | Tablet | Desktop | Notes |
