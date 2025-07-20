@@ -14,9 +14,6 @@ Targeted at students, educators, and lifelong learners, AcademIQ delivers a ligh
 
 source: [AcademIQ amiresponsive](https://ui.dev/amiresponsive?url=https://academ-iq-b9bb24eb3c99.herokuapp.com)
 
-> [!IMPORTANT]
-> The examples in these templates are strongly influenced by the Code Institute walkthrough project called "Love Sandwiches".
-
 ## UX
 
 ### The 5 Planes of UX

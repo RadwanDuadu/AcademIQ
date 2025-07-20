@@ -1,4 +1,6 @@
 import random
+import time
+
 from questions import (
     geographyQuestions,
     historyQuestions,
@@ -33,6 +35,13 @@ def get_random_questions_with_shuffled_options(questions, count=10):
     return selected
 
 
+def clear():
+    """
+    Clear function to clean-up the terminal so things don't get messy.
+    """
+    print("\033c")
+
+
 def topic_choice():
     '''
     1.Displays topic options with number values.
@@ -42,6 +51,7 @@ def topic_choice():
     topics = list(questionSets.keys())
 
     while True:
+
         print("Choose a topic:\n")
         for i, topic in enumerate(topics, 1):
             print(f"{i}. {topic.capitalize()}")
@@ -49,6 +59,7 @@ def topic_choice():
         choice = input("Enter the number of your chosen topic: \n").strip()
 
         if not choice.isdigit():
+            clear()
             print("Please enter a valid number.\n")
             continue
 
@@ -57,6 +68,7 @@ def topic_choice():
             chosen_topic = topics[index]
             return chosen_topic
         else:
+            clear()
             print("Invalid choice. Please try again.\n")
 
 
@@ -67,13 +79,21 @@ def input_validation(input, question):
     '''
     while True:
         try:
-            user_choice = int(input("Your answer (1-4): \n").strip())
+            user_choice = int(input("\nYour answer (1-4): \n").strip())
             if 1 <= user_choice <= len(question["options"]):
                 return user_choice
             else:
+                clear()
                 print("❗ Please enter a number between 1 and 4.\n")
+                # Display options with numbers
+                for idx, opt in enumerate(question["options"], 1):
+                    print(f"{idx}. {opt}")
         except ValueError:
+            clear()
             print("❗ Invalid input. Please enter a number between 1 and 4.\n")
+            # Display options with numbers
+            for idx, opt in enumerate(question["options"], 1):
+                print(f"{idx}. {opt}")
 
 
 def score_tracker(selected_option, question):
@@ -92,6 +112,8 @@ def score_tracker(selected_option, question):
         print(f"❌ Incorrect! The correct answer was: "
               f"{question['answer']}\n")
 
+    time.sleep(1)  # Pause for a moment before next question
+
 
 def reset_game():
     '''
@@ -99,6 +121,9 @@ def reset_game():
     This is called at the end of each game to prepare for a new round.
     '''
     global correct_answers, incorrect_answers, total_questions
+
+    # Clear the terminal for a fresh start
+    clear()
     # Input validation loop
     while True:
         prompt = "Do you want to play again? (yes/no): "
@@ -132,6 +157,8 @@ def run_game():
     # Choose Quiz Topic
     chosen_topic = topic_choice()
 
+    clear()  # Clears screen after choosing topic
+
     # randomly select questions and shuffle options
     selected_questions = get_random_questions_with_shuffled_options(
         questionSets[chosen_topic]
@@ -139,7 +166,8 @@ def run_game():
 
     # loop over selected questions
     for i, q in enumerate(selected_questions, 1):
-        print(f"\nQuestion {i}: {q['question']}")
+        clear()
+        print(f"\nQuestion {i}: {q['question']} \n")
 
         # Display options with numbers
         for idx, opt in enumerate(q["options"], 1):
@@ -153,6 +181,7 @@ def run_game():
         # Increment game state counters
         score_tracker(selected_option, q)
 
+    clear()
     # Summary of results
     print("\n🎉 Quiz complete!\n")
     print(f"Score: {correct_answers} correct, {incorrect_answers} incorrect, "
@@ -165,4 +194,5 @@ def run_game():
 
 
 if __name__ == "__main__":
+    clear()
     run_game()
