@@ -59,7 +59,7 @@ source: [AcademIQ amiresponsive](https://ui.dev/amiresponsive?url=https://academ
 
 #### 4. Skeleton
 
-**[Wireframes](#wireframes)** (see below)
+**[Data Models](#Flowchart)** (see below)
 
 #### 5. Surface
 
@@ -71,7 +71,7 @@ source: [AcademIQ amiresponsive](https://ui.dev/amiresponsive?url=https://academ
 To follow best practice, a flowchart was created to showcase the progression of the Python app.
 I've used [Lucidchart](https://www.lucidchart.com/pages/examples/flowchart-maker) to design my app flowchart.
 
-![screenshot](documentation/flowchart.png)
+Flowchart can be found in the **[Data Model](#flow chart)** (see below) section. 
 
 ## User Stories
 
@@ -128,6 +128,7 @@ I've used [Lucidchart](https://www.lucidchart.com/pages/examples/flowchart-maker
 | [![badge](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) | Hosting the deployed back-end site. |
 | [![badge](https://img.shields.io/badge/ChatGPT-grey?logo=openai&logoColor=75A99C)](https://chat.openai.com) | Help debug, troubleshoot, and explain things. |
 | [![badge](https://img.shields.io/badge/Lucidchart-grey?logo=lucid&logoColor=F97B2C)](https://www.lucidchart.com) | Flow diagrams for mapping the app's logic. |
+| [![badge](https://img.shields.io/badge/Mermaid-blue)](https://mermaid.live/edit#pako:eNqtVE1z2jAQ_SsanZIZkjEBEupDOw0kgXwnJJ1pDQfFWrAmtuRKcihh-O_VlxmT9tBDfcCWtO_te7uL1jgVFHCM57lYphmRGj0NpxyZ5-teMtFmY7aPDg4-o9NkXJTCnP-s2Lv5AaWZ4AoRTpECjVQqJKA3kpsTpAV6BylmnunUEQySR3Awc1qyFKWZYCmEkIELGa7HBpsBokQTVErxxihQS8rol42PHJpIdCtc_FlyLxnXRgMCKYVEBShFFmDza5AF4yS335SptFIKLTOiETNvKfgCLZnOXKag4czLbKT5bqzYvfNkkAmhAFUK5IGCHFJtdDkfAXzuAi-SiTtE7ahRorkUhbNlLCvgwb80lRNFvgoEF45gtHY1R7kQpZHLcmjwZOQNEBfGb56jFzBMxliZkxXQUJyRIxknQ7-_xXoJdUb0Vwdjh73cYglXS5BIlC55CLp0QVfbVtqC2Ap7RtuIHVhAXTnU9T9097rR3Zv_2t0br7yRpu7ubTIQRUnM9FpxzhHjZaU9hRlr6a1ZX4Hs1gHvrCEfGqJqG3dN_vtkzFMJBXD9gc3_XWYNTLD-0IAw_gdIMvKS17h7h3jc9m0OQF9I-hqOH_yxXzy6xWQ9spNkp2hnTndHqvYyaegaNbZqe0_bzP4KIHPTHEf-YXIdvfcANKh7chTP6515YnPbiZWpv8psg1PBNeOV74-9foKy56aMQWMvqP22l5xxOtufctzCC8kojrWsoIULMz3ELvHaoqbYEBcwxbH5pES-TvGUbwymJPyHEEUNk6JaZDiek1yZVVWa6YIhIwtJtiGk0mKy4ukWApyCHIiKaxx3IkeJ4zX-ZVb9_uGnqNeJOr2jk067Gx238ArH3ePDk14UHbW7x-1eu91tb1r43YmIDvsnvRYGyrSQN_7adrf35jckPNsC) | Flow diagrams for mapping the app's logic. |
 
 ## Database Design
 
@@ -243,7 +244,6 @@ Deployment steps are as follows, after account setup:
 - Select **New** in the top-right corner of your Heroku Dashboard, and select **Create new app** from the dropdown menu.
 - Your app name must be unique, and then choose a region closest to you (EU or USA), then finally, click **Create App**.
 - From the new app **Settings**, click **Reveal Config Vars**, and set the value of **KEY** to `PORT`, and the **VALUE** to `8000` then select **ADD**.
-- If using any confidential credentials, such as **CREDS.JSON**, then these should be pasted in the Config Variables as well.
 - Further down, to support dependencies, select **Add Buildpack**.
 - The order of the buildpacks is important; select `Python` first, then `Node.js` second. (if they are not in this order, you can drag them to rearrange them)
 
@@ -293,8 +293,6 @@ This project can be cloned or forked in order to make a local copy on your own s
 For either method, you will need to install any applicable packages found within the [requirements.txt](requirements.txt) file.
 
 - `pip3 install -r requirements.txt`.
-
-If using any confidential credentials, such as `CREDS.json` or `env.py` data, these will need to be manually added to your own newly created project as well.
 
 #### Cloning
 
