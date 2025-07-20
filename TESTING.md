@@ -25,35 +25,6 @@ I've tested my deployed project to check for responsiveness issues.
 
 ## Browser Compatibility
 
-🛑 NOTE 🛑
-
-You are NOT required to showcase "Browser Compatibility" testing for PP3. The Python terminal was provided to you by Code Institute, and there are known issues with it not being compatible for all browsers. Compatibility testing for PP3 is only an added bonus, so if you don't want to include it, feel free to remove this entire **Browser Compatibility** section.
-
-If you are performing compatibility tests, here is a known issue that you can document for PP3 specifically:
-
-- Firefox: emojis get cut-off
-- Safari: doesn't work well for any Apple devices except MacBooks
-
-🛑 --- END --- 🛑
-
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to discuss testing the live/deployed site on various browsers. Consider testing at least 3 different browsers, if available on your system. You DO NOT need to use all of the browsers below, just pick any 3 (minimum).
-
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
-- [Safari](https://support.apple.com/downloads/safari)
-- [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-**IMPORTANT**: You must provide screenshots of the browsers you've tested, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time. Some of these are paid services, but some are free. If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-⚠️ --- END --- ⚠️
-
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Chrome | Firefox | Safari | Notes |
