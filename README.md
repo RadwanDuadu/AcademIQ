@@ -66,13 +66,6 @@ source: [AcademIQ amiresponsive](https://ui.dev/amiresponsive?url=https://academ
 **Visual Design Elements**
 - No visual design elements as this project is completed using the commandline. 
 
-## Wireframes
-
-To follow best practice, a flowchart was created to showcase the progression of the Python app.
-I've used [Lucidchart](https://www.lucidchart.com/pages/examples/flowchart-maker) to design my app flowchart.
-
-Flowchart can be found in the **[Data Model](#flow chart)** (see below) section. 
-
 ## User Stories
 
 | **Target** | **Expectation**                                                                 | **Outcome**                                                                   |
@@ -184,8 +177,12 @@ The primary functions used on this application are:
     - Resets the game state to start of user flow. 
 - `score_tracker()`
     - Track correct and incorrect answers and total score.
+- `quiz_banner()`
+    - Displays the ASCII art banner for the quiz game.
 - `input_validation()`
     - Validates user input against a list of valid inputs.
+- `clear()`
+    - Clear the text on the screen. 
 - `run_game()`
     - Main function to run the quiz game.
 - `main()`
@@ -342,7 +339,9 @@ There are no remaining major differences between the local version when compared
 
 ### Media
 
-No Media resources where used in this project.
+| Source | Notes |
+| --- | --- |
+| [ASCII Art Archive](https://www.asciiart.eu) | Pre-defined ASCII art |
 
 ### Acknowledgements
 
