@@ -72,6 +72,29 @@ def topic_choice():
             print(f"Your choice {choice},Invalid choice. Please try again.\n")
 
 
+def quiz_banner():
+    """
+    Displays the ASCII art banner for the quiz game.
+
+    This function prints a stylized banner to the terminal
+    to give the application a more polished and engaging look.
+    It's typically called at the start of the game or after major sections
+    like finishing the quiz or restarting.
+
+    The ASCII art represents the title or branding of the quiz game.
+    """
+    banner = r"""
+    _                 _                ___ ___
+   / \   ___ __ _  __| | ___ _ __ ___ |_ _/ _ \
+  / _ \ / __/ _` |/ _` |/ _ \ '_ ` _ \ | | | | |
+ / ___ \ (_| (_| | (_| |  __/ | | | | || | |_| |
+/_/   \_\___\__,_|\__,_|\___|_| |_| |_|___\__\_\
+
+A fun and educational multiple-choice quiz to test your knowledge.
+    """
+    print(banner)
+
+
 def input_validation(input_func, question):
     '''
     Validates user input against a list of valid inputs.
@@ -134,6 +157,7 @@ def reset_game():
         if restart in ['yes', 'no']:
             break
         else:
+            clear()
             print("❗ Invalid input. Please type 'yes' or 'no'.")
 
     if restart == 'yes':
@@ -198,4 +222,5 @@ def run_game():
 
 if __name__ == "__main__":
     clear()
+    quiz_banner()
     run_game()
