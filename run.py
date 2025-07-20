@@ -1,5 +1,7 @@
 import random
 import time
+import colorama
+from colorama import Fore
 
 from questions import (
     geographyQuestions,
@@ -9,6 +11,7 @@ from questions import (
     physicsQuestions,
 )
 
+colorama.init(autoreset=True)  # Initialize colorama to auto-reset colors
 # --- Question sets ---
 questionSets = {
     "geography": geographyQuestions,
@@ -60,7 +63,8 @@ def topic_choice():
 
         if not choice.isdigit():
             clear()
-            print(f"Your choice {choice}, Please enter a valid number.\n")
+            print(f"{Fore.CYAN}Your choice {Fore.YELLOW}'{choice}'{Fore.CYAN},"
+                  " Please enter a valid number.\n")
             continue
 
         index = int(choice) - 1
@@ -69,7 +73,8 @@ def topic_choice():
             return chosen_topic
         else:
             clear()
-            print(f"Your choice {choice},Invalid choice. Please try again.\n")
+            print(f"{Fore.CYAN}Your choice {Fore.YELLOW}'{choice}'{Fore.CYAN},"
+                  "Invalid choice. Please try again.\n")
 
 
 def quiz_banner():
@@ -109,12 +114,14 @@ def input_validation(input_func, question):
                 return user_choice
             else:
                 clear()
-                print(f"Your choice '{user_choice}',"
-                      " ❗ Please enter a number between 1 and 4.\n")
+                print(
+                    f"{Fore.CYAN}Your choice {Fore.YELLOW}'{user_choice}'"
+                    f"{Fore.CYAN}, ❗ Please enter a number between 1-4.\n"
+                      )
         except ValueError:
             clear()
-            print(f"Your choice '{raw_input}',"
-                  " ❗ Invalid input. Please enter a number between 1 and 4.\n")
+            print(f"{Fore.CYAN}Your choice {Fore.YELLOW}'{raw_input}'"
+                  f"{Fore.CYAN},❗ Invalid, Please enter number between 1-4.\n")
 
         # Re-display the question and options after error
         print(f"\n{question['question']}")
@@ -132,13 +139,13 @@ def score_tracker(selected_option, question):
     total_questions += 1
     if selected_option.lower() == question["answer"].lower():
         correct_answers += 1
-        print("✅ Correct!\n")
+        print(f"{Fore.GREEN} ✅ Correct!\n")
     else:
         incorrect_answers += 1
-        print(f"❌ Incorrect! The correct answer was: "
-              f"{question['answer']}\n")
+        print(f"{Fore.RED} ❌ Incorrect! The correct answer was: "
+              f"{Fore.YELLOW}{question['answer']}\n")
 
-    time.sleep(1)  # Pause for a moment before next question
+    time.sleep(0.9)  # Pause for a moment before next question
 
 
 def reset_game():
@@ -158,7 +165,8 @@ def reset_game():
             break
         else:
             clear()
-            print("❗ Invalid input. Please type 'yes' or 'no'.")
+            print(f"{Fore.CYAN} Your choice {Fore.YELLOW}'{restart}'"
+                  f"{Fore.CYAN},❗ Invalid input. Please type 'yes' or 'no'.")
 
     if restart == 'yes':
         correct_answers = 0
@@ -166,7 +174,7 @@ def reset_game():
         total_questions = 0
         run_game()
     else:
-        print("Goodbye! Thanks for playing!\n")
+        print(f"{Fore.YELLOW} Goodbye! Thanks for playing!\n")
 
 
 def run_game():
@@ -211,7 +219,8 @@ def run_game():
     clear()
     # Summary of results
     print("\n🎉 Quiz complete!\n")
-    print(f"Score: {correct_answers} correct, {incorrect_answers} incorrect, "
+    print(f"{Fore.YELLOW} Score: {correct_answers} correct,"
+          f" {incorrect_answers} incorrect, "
           f"out of {total_questions} total.\n")
 
     # Reset game state for next playthrough
