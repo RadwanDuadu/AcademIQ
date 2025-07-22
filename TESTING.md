@@ -55,24 +55,18 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## User Story Testing
 
-⚠️ INSTRUCTIONS ⚠️
+| **Target**     | **Expectation**                                                                 | **Outcome**                                                                                    | **Screenshot**                                      |
+| -------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| As a user      | I would like to answer multiple-choice questions using a number between 1 and 4 | so that I can easily select an option without typing the full answer.                          | ![screenshot](documentation/features/input-validation.png) |
+| As a user      | I want the quiz to validate my input                                            | so that I don't accidentally crash the program by entering something invalid.                  | ![screenshot](documentation/features/input-validation.png) |
+| As a user      | I want the quiz to ignore capitalization when checking my answers               | so that I’m not penalized for formatting.                                                      | ![screenshot](documentation/features/restart-quiz.png) |
+| As a user      | I want immediate feedback after each question                                   | so that I know right away whether I was correct or not.                                        | ![screenshot](documentation/features/answer-feedback.png) |
+| As a user      | I want to see my total score at the end of the quiz                             | so that I can track how well I performed.                                                      | ![screenshot](documentation/features/score-feedback.png) |
+| As a user      | I want the option to restart the quiz without closing the program               | so that I can try different topics easily.                                                     | ![screenshot](documentation/features/restart-quiz.png) |
+| As a user      | I want the quiz to only accept “yes” or “no” when asking to restart             | so that I’m not confused by vague input handling.                                              | ![screenshot](documentation/features/restart-validation.png) |
+| As a user      | I want to choose from multiple quiz topics                                      | so that I can focus on the subject areas that interest me most.                                | ![screenshot](documentation/features/choose-topic.png) |
+| As a user      | I want questions to be randomly selected from the topic I choose                | so that I get a different experience each time I play.                                         | ![screenshot](documentation/features/random-question-selection.png) |
 
-Testing User Stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **Features** should already align with the **User Stories**, so this should be as simple as creating a table with the User Story, matching with the re-used screenshot from the respective Feature.
-
-⚠️ --- END --- ⚠️
-
-| Target | Expectation | Outcome | Screenshot |
-| --- | --- | --- | --- |
-| As a user | I would like to input the number of each sandwich type sold during the day | so that I can track daily sales accurately. | ![screenshot](documentation/features/feature01.png) |
-| As a user | I would like to view a breakdown of total sandwich sales by type | so that I can easily see which sandwiches are the most and least popular. | ![screenshot](documentation/features/feature02.png) |
-| As a user | I would like the application to calculate the total sandwiches sold for the day | so that I don’t have to do manual sums. | ![screenshot](documentation/features/feature03.png) |
-| As a user | I would like to see a trend of sandwich sales over time (e.g., week, month) | so that I can identify which sandwiches are consistently popular. | ![screenshot](documentation/features/feature04.png) |
-| As a user | I would like the application to suggest an estimated number of each sandwich type to make for the next day, based on past sales data | so that I can minimize waste and shortages. | ![screenshot](documentation/features/feature05.png) |
-| As a user | I would like the app to categorize sandwiches by type (e.g., vegetarian, meat, cheese) | so that I can track popularity within different dietary categories. | ![screenshot](documentation/features/feature06.png) |
-| As a user | I would like to input sales quickly with minimal typing | so that I can focus on running the shop instead of logging data. | ![screenshot](documentation/features/feature07.png) |
-| As a user | I would like the app to be intuitive and easy to use | so that I can start tracking sales without needing extensive training. | ![screenshot](documentation/features/feature08.png) |
 
 ## Bugs
 
