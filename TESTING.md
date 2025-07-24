@@ -92,7 +92,6 @@ Any remaining open issues can be tracked [here](https://www.github.com/RadwanDua
 
 | Issue | Screenshot |
 | --- | --- |
-| When using a helper `clear()` function, any text above the height of the terminal (24 lines) does not clear, and remains when scrolling up. | Unable to reproduce known issue while testing |
 | The `colorama` terminal colors are fainter on Heroku when compared to the IDE locally. | ![screenshot](documentation/issues/colorama.png) |
 | Emojis are cut-off when viewing the application from Firefox. | Unable to add screenshot due to timer added to feedback resulting in feedback display for 1-2 seconds |
 | The Python terminal doesn't work well with Safari, and sometimes uses cannot type in the application. | ![screenshot](documentation/issues/safari-terminal.png) |
