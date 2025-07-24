@@ -140,12 +140,12 @@ def score_tracker(selected_option, question):
     if selected_option.lower() == question["answer"].lower():
         correct_answers += 1
         print(f"{Fore.GREEN} ✅ Correct!\n")
+        time.sleep(0.9)  # Pause for a moment before next question
     else:
         incorrect_answers += 1
         print(f"{Fore.RED} ❌ Incorrect! The correct answer was: "
               f"{Fore.YELLOW}{question['answer']}\n")
-
-    time.sleep(0.9)  # Pause for a moment before next question
+        time.sleep(2)  # Pause for a moment before next question
 
 
 def reset_game():
@@ -220,9 +220,11 @@ def run_game():
     # Summary of results
     print("\n🎉 Quiz complete!\n")
     print(f"{Fore.YELLOW} Score: {correct_answers} correct,"
-          f" {incorrect_answers} incorrect, "
-          f"out of {total_questions} total.\n")
+          f"{Fore.RED} {incorrect_answers} incorrect"
+          f"{Fore.YELLOW}, out of {total_questions} total.\n")
 
+    prompt = "Press Enter if you want to Continue \n"
+    input(prompt)
     # Reset game state for next playthrough
     print("Thank you for playing! You can restart the game to try another "
           "topic or exit.")
